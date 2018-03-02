@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eigenaar.journal.InputActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_gravity="center"
+        android:text="Create a new item for your journal!"/>
+    <EditText
+        android:id="@+id/newTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:hint="Title"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/newContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="200"
+        android:ems="10"
+        android:hint="Content"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/newMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="Mood: happy :), sad :( or normal :|"
+        android:layout_margin="10dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:onClick="addEntry"/>
+
+</LinearLayout>
